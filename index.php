@@ -8,7 +8,7 @@
 </head>
 <body>
 <?php 
-  $isimBir = "Abdullah";
+  $isimBir = "Serkan";
   $isimIki = "Sinan";
   $isimUc = "İlkay";
   $isimDort = "Bekir";
