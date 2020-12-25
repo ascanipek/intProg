@@ -48,54 +48,7 @@
 <div class="container">
   <h1>Sınıf Listesi</h1>
 
-  <div class="row">
-    <div class="col-3">
-      <div class="card">
-        <div class="card-header">
-          Liste
-        </div>
-        <div class="card-body">
-          <ul class="list-group">
-            <?php 
-              for($i=0; $i<count($dizi); $i++){
-                if($dizi[$i] == 'Sinan')
-                  echo "<li class='list-group-item active'>" . $dizi[$i] . "</li>";
-                else  
-                  echo "<li class='list-group-item'>" . $dizi[$i] . "</li>";
-
-              }
-            ?>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-9">
-      <div class="row">
-          <?php
-            for($i=0; $i<count($dizi);$i++){
-          ?>
-            <div class="col-6 mb-2">
-              <div class="card bg-danger text-white">
-                <div class="card-header">
-                  <?php echo $students[$i]["name"] ?>
-                </div>
-                <div class="card-body">
-                  <?php echo $students[$i]["dep"] ?> 
-                  <br>
-                  Yaş: <?php echo $students[$i]["age"] ?>
-                </div>
-              </div>
-            </div>
-          <?php
-            }
-          ?>
-
-         
-      </div>
-    </div>
-  </div>
-  
+ 
 
 </div>
 
