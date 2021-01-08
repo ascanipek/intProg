@@ -20,6 +20,8 @@
     "Bekir"
   ];
 
+  // echo count($dizi);
+
   $students = [
     0 => [
       "name" => "Abdullah",
@@ -62,7 +64,6 @@
                   echo "<li class='list-group-item active'>" . $dizi[$i] . "</li>";
                 else  
                   echo "<li class='list-group-item'>" . $dizi[$i] . "</li>";
-
               }
             ?>
           </ul>
