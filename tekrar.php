@@ -29,5 +29,68 @@
             }
        ?>
    </select>
+
+            <!-- Diziler -->
+
+            <div>
+                <?php
+                    // $numbers = [1, 45, 98, 26, 33];
+                    // for($x=0; $x<count($numbers); $x++){
+                    //     if($x == count($numbers) - 1)
+                    //         echo $numbers[$x];
+                    //     else if($x != count($numbers))
+                    //         echo $numbers[$x] . '-';
+                        
+                    // }
+
+                    // foreach($numbers as $eleman){
+                    //     echo $eleman . '-';
+                    // }
+
+                    // $ogrenciler = [
+                    //     268 => [
+                    //         'isim' => 'Abdrrahman',
+                    //         'yas' => 17,
+                    //         'dYeri' => 'Eskişehir'
+                    //     ],
+                    //     449 => 'Yiğit',
+                    //     325 => 'Yunusemre'
+                    // ];
+
+                    // // echo $ogrenciler[268]['dYeri'];
+
+                    // foreach($ogrenciler[268] as $bilgi){
+                    //     echo $bilgi . '<br>';
+                    // }
+
+                    
+                    // Fonksiyonlar
+                    function topla($a, $b){
+                        return $a + $b;
+                    }
+
+                    function tablo($satir, $sutun){
+                        $html = '';
+                        $html .= '<table border="1">';
+                        for($i=1; $i <= $satir; $i++){
+                            $html .= '<tr>';
+                            for($j=1; $j <= $sutun; $j++){
+                                $html .= '<td>' . $i . '/' . $j . '</td>';
+                            }
+                            $html .= '</tr>';
+                        }
+                        $html .= '</table>';
+                        echo $html;
+                    }
+                    
+                    tablo(100,100);
+
+                ?>
+            </div>
+
+  
+
+
+
 </body>
 </html>
