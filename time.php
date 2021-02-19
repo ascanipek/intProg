@@ -13,14 +13,7 @@
             $unix = time();
             $zaman = date('d.m.Y H:i');
             echo $zaman;
-
-            
-
         ?>
-
-
-
     </div>
-    
 </body>
 </html>
